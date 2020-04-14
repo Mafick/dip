@@ -55,7 +55,7 @@ public class FindLongestPalindrome {
 	}
 
 	// A utility function to print a substring str[low..high]
-	static String getString(String str, int low, int high) {
+	private String getString(String str, int low, int high) {
 		return str.substring(low, high + 1);
 	}
 }
