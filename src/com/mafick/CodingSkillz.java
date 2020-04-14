@@ -6,6 +6,8 @@ import com.mafick.addition.AddTwoNumbersAsLinkedList;
 import com.mafick.addition.AddTwoNumbersAsLinkedListTestData;
 import com.mafick.routers.CriticalRouters;
 import com.mafick.routers.CriticalRoutersTestData;
+import com.mafick.substring.FindLongestPalindrome;
+import com.mafick.substring.FindLongestPalindromeTestData;
 import com.mafick.substring.FindLongestSubString;
 import com.mafick.substring.FindLongestSubStringTestData;
 
@@ -21,6 +23,8 @@ public class CodingSkillz {
 		twoIntegerLists();
 		System.out.println(" ");
 		findLongestSubString();
+		System.out.println(" ");
+		findLongestPalindrome();
 		System.out.println(" ");
 	}
 
@@ -44,10 +48,19 @@ public class CodingSkillz {
 	}
 
 	private static void findLongestSubString() {
-		System.out.println("- FindLongestSubString");
+		System.out.println("- Substring: FindLongestSubString");
 		FindLongestSubString findLongestSubString = new FindLongestSubString();
 		Integer result = findLongestSubString.result(FindLongestSubStringTestData.creteTestData_1());
 		printResult(result);
+	}
+
+	private static void findLongestPalindrome() {
+		System.out.println("- Substring: FindLongestPalindrome");
+		FindLongestPalindrome findLongestPalindrome = new FindLongestPalindrome();
+		String result_1 = findLongestPalindrome.result(FindLongestPalindromeTestData.creteTestData_1());
+		printResult(result_1);
+		String result_2 = findLongestPalindrome.result(FindLongestPalindromeTestData.creteTestData_2());
+		printResult(result_2);
 	}
 
 	//
