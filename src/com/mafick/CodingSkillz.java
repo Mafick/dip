@@ -18,11 +18,11 @@ public class CodingSkillz {
 		System.out.println("#### Coding Skillz ####");
 		System.out.println(" ");
 
-		// criticalRouters();
+		criticalRouters();
 		System.out.println(" ");
-		// twoIntegerLists();
+		twoIntegerLists();
 		System.out.println(" ");
-		// findLongestSubString();
+		findLongestSubString();
 		System.out.println(" ");
 		findLongestPalindrome();
 		System.out.println(" ");
@@ -61,6 +61,10 @@ public class CodingSkillz {
 		printResult(result_1);
 		String result_2 = findLongestPalindrome.result(FindLongestPalindromeTestData.creteTestData_2());
 		printResult(result_2);
+		String result_3 = findLongestPalindrome.result(FindLongestPalindromeTestData.creteTestData_3());
+		printResult(result_3);
+		String result_4 = findLongestPalindrome.result(FindLongestPalindromeTestData.creteTestData_4());
+		printResult(result_4);
 	}
 
 	//

@@ -23,4 +23,18 @@ public class FindLongestPalindromeTestData {
 		System.out.println("Input:     " + testData);
 		return testData;
 	}
+
+	public static String creteTestData_3() {
+		String testData = "abaxxxjjxxx";
+
+		System.out.println("Input:     " + testData);
+		return testData;
+	}
+
+	public static String creteTestData_4() {
+		String testData = "a";
+
+		System.out.println("Input:     " + testData);
+		return testData;
+	}
 }
