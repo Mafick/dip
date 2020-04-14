@@ -18,11 +18,11 @@ public class CodingSkillz {
 		System.out.println("#### Coding Skillz ####");
 		System.out.println(" ");
 
-		criticalRouters();
+		// criticalRouters();
 		System.out.println(" ");
-		twoIntegerLists();
+		// twoIntegerLists();
 		System.out.println(" ");
-		findLongestSubString();
+		// findLongestSubString();
 		System.out.println(" ");
 		findLongestPalindrome();
 		System.out.println(" ");
