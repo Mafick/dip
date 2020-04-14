@@ -6,6 +6,8 @@ import com.mafick.addition.AddTwoNumbersAsLinkedList;
 import com.mafick.addition.AddTwoNumbersAsLinkedListTestData;
 import com.mafick.routers.CriticalRouters;
 import com.mafick.routers.CriticalRoutersTestData;
+import com.mafick.string.ValidateBalancedBrackets;
+import com.mafick.string.ValidateBalancedBracketsTestData;
 import com.mafick.substring.FindLongestPalindrome;
 import com.mafick.substring.FindLongestPalindromeTestData;
 import com.mafick.substring.FindLongestSubString;
@@ -25,6 +27,8 @@ public class CodingSkillz {
 		findLongestSubString();
 		System.out.println(" ");
 		findLongestPalindrome();
+		System.out.println(" ");
+		validateBalancedBrackets();
 		System.out.println(" ");
 	}
 
@@ -64,6 +68,19 @@ public class CodingSkillz {
 		String result_3 = findLongestPalindrome.result(FindLongestPalindromeTestData.creteTestData_3());
 		printResult(result_3);
 		String result_4 = findLongestPalindrome.result(FindLongestPalindromeTestData.creteTestData_4());
+		printResult(result_4);
+	}
+
+	private static void validateBalancedBrackets() {
+		System.out.println("- Substring: FindLongestPalindrome");
+		ValidateBalancedBrackets validateBalancedBrackets = new ValidateBalancedBrackets();
+		boolean result_1 = validateBalancedBrackets.result(ValidateBalancedBracketsTestData.creteTestData_1());
+		printResult(result_1);
+		boolean result_2 = validateBalancedBrackets.result(ValidateBalancedBracketsTestData.creteTestData_2());
+		printResult(result_2);
+		boolean result_3 = validateBalancedBrackets.result(ValidateBalancedBracketsTestData.creteTestData_3());
+		printResult(result_3);
+		boolean result_4 = validateBalancedBrackets.result(ValidateBalancedBracketsTestData.creteTestData_4());
 		printResult(result_4);
 	}
 
