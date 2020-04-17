@@ -1,9 +1,12 @@
 package com.mafick;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import com.mafick.addition.AddTwoNumbersAsLinkedList;
 import com.mafick.addition.AddTwoNumbersAsLinkedListTestData;
+import com.mafick.array.FirstAndLastIndicies;
+import com.mafick.array.FirstAndLastIndiciesTestData;
 import com.mafick.routers.CriticalRouters;
 import com.mafick.routers.CriticalRoutersTestData;
 import com.mafick.string.ValidateBalancedBrackets;
@@ -29,6 +32,8 @@ public class CodingSkillz {
 		findLongestPalindrome();
 		System.out.println(" ");
 		validateBalancedBrackets();
+		System.out.println(" ");
+		firstAndLastIndicies();
 		System.out.println(" ");
 	}
 
@@ -82,6 +87,17 @@ public class CodingSkillz {
 		printResult(result_3);
 		boolean result_4 = validateBalancedBrackets.result(ValidateBalancedBracketsTestData.creteTestData_4());
 		printResult(result_4);
+	}
+
+	private static void firstAndLastIndicies() {
+		System.out.println("- Array: FirstAndLastIndicies");
+		FirstAndLastIndicies findLongestSubString = new FirstAndLastIndicies();
+		ArrayList<Integer> result_1 = findLongestSubString.result(FirstAndLastIndiciesTestData.creteTestData_1(), 9);
+		printResult(result_1);
+		ArrayList<Integer> result_2 = findLongestSubString.result(FirstAndLastIndiciesTestData.creteTestData_2(), 150);
+		printResult(result_2);
+		ArrayList<Integer> result_3 = findLongestSubString.result(FirstAndLastIndiciesTestData.creteTestData_3(), 9);
+		printResult(result_3);
 	}
 
 	//
