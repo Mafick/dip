@@ -7,6 +7,8 @@ import com.mafick.addition.AddTwoNumbersAsLinkedList;
 import com.mafick.addition.AddTwoNumbersAsLinkedListTestData;
 import com.mafick.array.FirstAndLastIndicies;
 import com.mafick.array.FirstAndLastIndiciesTestData;
+import com.mafick.list.ReverseList;
+import com.mafick.list.ReverseListTestData;
 import com.mafick.routers.CriticalRouters;
 import com.mafick.routers.CriticalRoutersTestData;
 import com.mafick.string.ValidateBalancedBrackets;
@@ -34,6 +36,8 @@ public class CodingSkillz {
 		validateBalancedBrackets();
 		System.out.println(" ");
 		firstAndLastIndicies();
+		System.out.println(" ");
+		reverseList();
 		System.out.println(" ");
 	}
 
@@ -98,6 +102,15 @@ public class CodingSkillz {
 		printResult(result_2);
 		ArrayList<Integer> result_3 = findLongestSubString.result(FirstAndLastIndiciesTestData.creteTestData_3(), 9);
 		printResult(result_3);
+	}
+
+	private static void reverseList() {
+		System.out.println("- List: ReverseList");
+		ReverseList reverseList = new ReverseList();
+		List<Integer> result_1 = reverseList.result_interative(ReverseListTestData.creteTestData_1());
+		printResult(result_1);
+		List<Integer> result_2 = reverseList.result_recursive(ReverseListTestData.creteTestData_1());
+		printResult(result_2);
 	}
 
 	//
