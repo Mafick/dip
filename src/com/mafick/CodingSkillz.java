@@ -5,6 +5,8 @@ import java.util.List;
 
 import com.mafick.addition.AddTwoNumbersAsLinkedList;
 import com.mafick.addition.AddTwoNumbersAsLinkedListTestData;
+import com.mafick.addition.TwoSum;
+import com.mafick.addition.TwoSumTestData;
 import com.mafick.array.FirstAndLastIndicies;
 import com.mafick.array.FirstAndLastIndiciesTestData;
 import com.mafick.list.ReverseList;
@@ -38,6 +40,8 @@ public class CodingSkillz {
 		firstAndLastIndicies();
 		System.out.println(" ");
 		reverseList();
+		System.out.println(" ");
+		twoSum();
 		System.out.println(" ");
 	}
 
@@ -110,6 +114,15 @@ public class CodingSkillz {
 		List<Integer> result_1 = reverseList.result_interative(ReverseListTestData.creteTestData_1());
 		printResult(result_1);
 		List<Integer> result_2 = reverseList.result_recursive(ReverseListTestData.creteTestData_1());
+		printResult(result_2);
+	}
+
+	private static void twoSum() {
+		System.out.println("- Addition: TwoSum");
+		TwoSum twoSum = new TwoSum();
+		boolean result_1 = twoSum.result(TwoSumTestData.creteTestData_1(), 5);
+		printResult(result_1);
+		boolean result_2 = twoSum.result(TwoSumTestData.creteTestData_2(), 6);
 		printResult(result_2);
 	}
 
