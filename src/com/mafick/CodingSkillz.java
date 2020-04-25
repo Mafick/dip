@@ -7,6 +7,8 @@ import com.mafick.addition.AddTwoNumbersAsLinkedList;
 import com.mafick.addition.AddTwoNumbersAsLinkedListTestData;
 import com.mafick.addition.TwoSum;
 import com.mafick.addition.TwoSumTestData;
+import com.mafick.array.FindNonDuplicate;
+import com.mafick.array.FindNonDuplicateTestData;
 import com.mafick.array.FirstAndLastIndicies;
 import com.mafick.array.FirstAndLastIndiciesTestData;
 import com.mafick.list.ReverseList;
@@ -42,6 +44,8 @@ public class CodingSkillz {
 		reverseList();
 		System.out.println(" ");
 		twoSum();
+		System.out.println(" ");
+		findNonDuplicate();
 		System.out.println(" ");
 	}
 
@@ -124,6 +128,13 @@ public class CodingSkillz {
 		printResult(result_1);
 		boolean result_2 = twoSum.result(TwoSumTestData.creteTestData_2(), 6);
 		printResult(result_2);
+	}
+
+	private static void findNonDuplicate() {
+		System.out.println("- Array: findNonDuplicate");
+		FindNonDuplicate findNonDuplicate = new FindNonDuplicate();
+		Integer result_1 = findNonDuplicate.result(FindNonDuplicateTestData.creteTestData_1());
+		printResult(result_1);
 	}
 
 	//
