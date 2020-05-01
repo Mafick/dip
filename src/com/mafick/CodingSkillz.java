@@ -15,6 +15,8 @@ import com.mafick.list.ReverseList;
 import com.mafick.list.ReverseListTestData;
 import com.mafick.routers.CriticalRouters;
 import com.mafick.routers.CriticalRoutersTestData;
+import com.mafick.string.BasicCalculator;
+import com.mafick.string.BasicCalculatorTestData;
 import com.mafick.string.ValidateBalancedBrackets;
 import com.mafick.string.ValidateBalancedBracketsTestData;
 import com.mafick.substring.FindLongestPalindrome;
@@ -46,6 +48,8 @@ public class CodingSkillz {
 		twoSum();
 		System.out.println(" ");
 		findNonDuplicate();
+		System.out.println(" ");
+		basicCalculator();
 		System.out.println(" ");
 	}
 
@@ -134,6 +138,13 @@ public class CodingSkillz {
 		System.out.println("- Array: findNonDuplicate");
 		FindNonDuplicate findNonDuplicate = new FindNonDuplicate();
 		Integer result_1 = findNonDuplicate.result(FindNonDuplicateTestData.creteTestData_1());
+		printResult(result_1);
+	}
+
+	private static void basicCalculator() {
+		System.out.println("- String: basicCalculator");
+		BasicCalculator basicCalculator = new BasicCalculator();
+		Integer result_1 = basicCalculator.result(BasicCalculatorTestData.creteTestData_1());
 		printResult(result_1);
 	}
 
