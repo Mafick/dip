@@ -5,6 +5,8 @@ import java.util.List;
 
 import com.mafick.addition.AddTwoNumbersAsLinkedList;
 import com.mafick.addition.AddTwoNumbersAsLinkedListTestData;
+import com.mafick.addition.ConsecutiveSum;
+import com.mafick.addition.ConsecutiveSumTestData;
 import com.mafick.addition.TwoSum;
 import com.mafick.addition.TwoSumTestData;
 import com.mafick.array.FindNonDuplicate;
@@ -50,6 +52,8 @@ public class CodingSkillz {
 		findNonDuplicate();
 		System.out.println(" ");
 		basicCalculator();
+		System.out.println(" ");
+		consecutiveSum();
 		System.out.println(" ");
 	}
 
@@ -147,6 +151,14 @@ public class CodingSkillz {
 		Integer result_1 = basicCalculator.result(BasicCalculatorTestData.creteTestData_1());
 		printResult(result_1);
 	}
+
+	private static void consecutiveSum() {
+		System.out.println("- Addition: consecutiveSum");
+		ConsecutiveSum consecutiveSum = new ConsecutiveSum();
+		List<Integer> result_1 = consecutiveSum.result(ConsecutiveSumTestData.creteTestData_1(), 0);
+		printResult(result_1);
+	}
+
 
 	//
 
