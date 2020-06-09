@@ -15,6 +15,8 @@ import com.mafick.array.FindNonDuplicate;
 import com.mafick.array.FindNonDuplicateTestData;
 import com.mafick.array.FirstAndLastIndicies;
 import com.mafick.array.FirstAndLastIndiciesTestData;
+import com.mafick.list.ConsecutiveNumberString;
+import com.mafick.list.ConsecutiveNumberStringTestData;
 import com.mafick.list.ReverseList;
 import com.mafick.list.ReverseListTestData;
 import com.mafick.routers.CriticalRouters;
@@ -58,6 +60,8 @@ public class CodingSkillz {
 		consecutiveSum();
 		System.out.println(" ");
 		arrayProduct();
+		System.out.println(" ");
+		consecutiveNumberString();
 		System.out.println(" ");
 	}
 
@@ -167,6 +171,13 @@ public class CodingSkillz {
 		System.out.println("- Array: arrayProduct");
 		ArrayProduct arrayProduct = new ArrayProduct();
 		List<Integer> result_1 = arrayProduct.result(ArrayProductTestData.creteTestData_1());
+		printResult(result_1);
+	}
+
+	private static void consecutiveNumberString() {
+		System.out.println("- List: NumberRange");
+		ConsecutiveNumberString consecutiveNumberString = new ConsecutiveNumberString();
+		List<String> result_1 = consecutiveNumberString.result(ConsecutiveNumberStringTestData.creteTestData_1());
 		printResult(result_1);
 	}
 
