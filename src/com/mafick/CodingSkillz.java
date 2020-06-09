@@ -9,6 +9,8 @@ import com.mafick.addition.ConsecutiveSum;
 import com.mafick.addition.ConsecutiveSumTestData;
 import com.mafick.addition.TwoSum;
 import com.mafick.addition.TwoSumTestData;
+import com.mafick.array.ArrayProduct;
+import com.mafick.array.ArrayProductTestData;
 import com.mafick.array.FindNonDuplicate;
 import com.mafick.array.FindNonDuplicateTestData;
 import com.mafick.array.FirstAndLastIndicies;
@@ -54,6 +56,8 @@ public class CodingSkillz {
 		basicCalculator();
 		System.out.println(" ");
 		consecutiveSum();
+		System.out.println(" ");
+		arrayProduct();
 		System.out.println(" ");
 	}
 
@@ -155,7 +159,14 @@ public class CodingSkillz {
 	private static void consecutiveSum() {
 		System.out.println("- Addition: consecutiveSum");
 		ConsecutiveSum consecutiveSum = new ConsecutiveSum();
-		List<Integer> result_1 = consecutiveSum.result(ConsecutiveSumTestData.creteTestData_1(), 0);
+		List<Integer> result_1 = consecutiveSum.result(ConsecutiveSumTestData.creteTestData_1(), 10);
+		printResult(result_1);
+	}
+
+	private static void arrayProduct() {
+		System.out.println("- Array: arrayProduct");
+		ArrayProduct arrayProduct = new ArrayProduct();
+		List<Integer> result_1 = arrayProduct.result(ArrayProductTestData.creteTestData_1());
 		printResult(result_1);
 	}
 
