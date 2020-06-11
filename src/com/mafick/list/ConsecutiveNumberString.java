@@ -27,7 +27,6 @@ public class ConsecutiveNumberString {
 				i = j;
 			}
 
-			System.out.println(String.format("%s->%s", start, end));
 			result.add(String.format("%s->%s", start, end));
 		}
 

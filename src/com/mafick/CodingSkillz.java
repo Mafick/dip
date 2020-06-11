@@ -15,6 +15,8 @@ import com.mafick.array.FindNonDuplicate;
 import com.mafick.array.FindNonDuplicateTestData;
 import com.mafick.array.FirstAndLastIndicies;
 import com.mafick.array.FirstAndLastIndiciesTestData;
+import com.mafick.array.LongestIncreasingSubsequnce;
+import com.mafick.array.LongestIncreasingSubsequnceTestData;
 import com.mafick.list.ConsecutiveNumberString;
 import com.mafick.list.ConsecutiveNumberStringTestData;
 import com.mafick.list.ReverseList;
@@ -62,6 +64,8 @@ public class CodingSkillz {
 		arrayProduct();
 		System.out.println(" ");
 		consecutiveNumberString();
+		System.out.println(" ");
+		longestIncreasingSubsequnce();
 		System.out.println(" ");
 	}
 
@@ -178,6 +182,13 @@ public class CodingSkillz {
 		System.out.println("- List: NumberRange");
 		ConsecutiveNumberString consecutiveNumberString = new ConsecutiveNumberString();
 		List<String> result_1 = consecutiveNumberString.result(ConsecutiveNumberStringTestData.creteTestData_1());
+		printResult(result_1);
+	}
+
+	private static void longestIncreasingSubsequnce() {
+		System.out.println("- Array: LongestIncreasingSubsequnce");
+		LongestIncreasingSubsequnce longestIncreasingSubsequnce = new LongestIncreasingSubsequnce();
+		Integer result_1 = longestIncreasingSubsequnce.result(LongestIncreasingSubsequnceTestData.creteTestData_1());
 		printResult(result_1);
 	}
 
