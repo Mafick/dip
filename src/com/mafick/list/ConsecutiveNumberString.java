@@ -13,18 +13,22 @@ public class ConsecutiveNumberString {
 		int end;
 		for (int i = 0; i < input.size(); i++) {
 			start = input.get(i);
-			System.out.println(start);
 
 			end = input.get(i);
-			for (int j = 0; j < input.size(); j++) {
-				System.out.println(end);
-				if (end + 1 == input.get(j)) {
-					end = input.get(j);
+			for (int j = i + 1; j < input.size(); j++) {
+				int currentEnd = input.get(j);
+
+				if (currentEnd - 1 == input.get(j - 1) || currentEnd == input.get(j - 1)) {
+					end = currentEnd;
 				} else {
-					result.add(String.format("%s->%s", start, end));
+					break;
 				}
 
+				i = j;
 			}
+
+			System.out.println(String.format("%s->%s", start, end));
+			result.add(String.format("%s->%s", start, end));
 		}
 
 		return result;
