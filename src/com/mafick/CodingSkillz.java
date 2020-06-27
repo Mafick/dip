@@ -25,6 +25,8 @@ import com.mafick.routers.CriticalRouters;
 import com.mafick.routers.CriticalRoutersTestData;
 import com.mafick.string.BasicCalculator;
 import com.mafick.string.BasicCalculatorTestData;
+import com.mafick.string.CompressedString;
+import com.mafick.string.CompressedStringTestData;
 import com.mafick.string.ValidateBalancedBrackets;
 import com.mafick.string.ValidateBalancedBracketsTestData;
 import com.mafick.substring.FindLongestPalindrome;
@@ -67,6 +69,8 @@ public class CodingSkillz {
 		System.out.println(" ");
 		longestIncreasingSubsequnce();
 		System.out.println(" ");
+		compressedString();
+		System.out.println();
 	}
 
 	//
@@ -190,6 +194,15 @@ public class CodingSkillz {
 		LongestIncreasingSubsequnce longestIncreasingSubsequnce = new LongestIncreasingSubsequnce();
 		Integer result_1 = longestIncreasingSubsequnce.result(LongestIncreasingSubsequnceTestData.creteTestData_1());
 		printResult(result_1);
+	}
+
+	private static void compressedString() {
+		System.out.println("- String: CompressedString");
+		CompressedString compressedString = new CompressedString();
+		String result_1 = compressedString.result(CompressedStringTestData.createTestData_1());
+		printResult(result_1);
+		// String result_2 = compressedString.result(CompressedStringTestData.createTestData_2());
+		// printResult(result_2);
 	}
 
 
