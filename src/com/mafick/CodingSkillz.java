@@ -201,8 +201,8 @@ public class CodingSkillz {
 		CompressedString compressedString = new CompressedString();
 		String result_1 = compressedString.result(CompressedStringTestData.createTestData_1());
 		printResult(result_1);
-		// String result_2 = compressedString.result(CompressedStringTestData.createTestData_2());
-		// printResult(result_2);
+		String result_2 = compressedString.result(CompressedStringTestData.createTestData_2());
+		printResult(result_2);
 	}
 
 

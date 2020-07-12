@@ -5,42 +5,32 @@ public class CompressedString {
 	public String result(String input) {
 		StringBuilder result = new StringBuilder();
 
-		//  Node(2 Node(3(Node(4, a, null)))
-
-		String counterString = null;
-		String alphabeticString = null;
 		for (int i = 0; i < input.length(); i++) {
-			char currentChar = input.charAt(i);
-			// System.out.println(currentChar);
 
-			if (Character.isDigit(currentChar)) {
-				counterString = getCounterString(input, i);
-				// System.out.println(counterString);
-				i += counterString.length();
-			}
-
-			if (Character.isAlphabetic(currentChar)) {
-				alphabeticString = getAlphabeticString(input, i);
-				// System.out.println(alphabeticString);
-				i += alphabeticString.length();
-			}
-
-			if (alphabeticString != null) {
-
-				if (counterString != null) {
-					String subResultString = createSubResultString(counterString, alphabeticString);
-					result.append(subResultString);
-				} else {
-					result.append(alphabeticString);
-				}
-
-				counterString = null;
-				alphabeticString = null;
-			}
-
+			recursive(input, i);
 		}
 
 		return result.toString();
+	}
+
+	private String recursive(String input, int i) {
+		char currentChar = input.charAt(i);
+
+		if (currentChar == '[') {
+			String recursive = recursive(input.substring(i + 1), 0);
+			// System.out.println(recursive);
+		}
+
+		StringBuilder subString = new StringBuilder();
+		for (int j = 0; j < input.length(); j++) {
+			subString.append(input.charAt(j));
+			// System.out.println(subString.toString());
+			if (currentChar == ']') {
+				break;
+			}
+		}
+
+		return subString.toString();
 	}
 
 	//
@@ -90,6 +80,15 @@ public class CompressedString {
 			this.repeat = repeat;
 			this.value = value;
 			this.nextNode = nextNode;
+		}
+
+		@Override
+		public String toString() {
+			return "Node{" +
+					"repeat=" + repeat +
+					", value='" + value + '\'' +
+					", nextNode=" + nextNode +
+					'}';
 		}
 	}
 }

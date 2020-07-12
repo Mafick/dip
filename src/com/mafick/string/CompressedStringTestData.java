@@ -15,7 +15,7 @@ public class CompressedStringTestData {
 	 */
 
 	public static String createTestData_1() {
-		String testData = "10[a]4[b]cdf";
+		String testData = "1[a]4[b]cdf";
 		System.out.println("Input:     " + testData);
 		return testData;
 	}
