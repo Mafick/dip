@@ -1,6 +1,7 @@
 package com.mafick;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import com.mafick.addition.AddTwoNumbersAsLinkedList;
@@ -11,6 +12,8 @@ import com.mafick.addition.TwoSum;
 import com.mafick.addition.TwoSumTestData;
 import com.mafick.array.ArrayProduct;
 import com.mafick.array.ArrayProductTestData;
+import com.mafick.array.FindMissingNumbers;
+import com.mafick.array.FindMissingNumbersTestData;
 import com.mafick.array.FindNonDuplicate;
 import com.mafick.array.FindNonDuplicateTestData;
 import com.mafick.array.FirstAndLastIndicies;
@@ -70,6 +73,8 @@ public class CodingSkillz {
 		longestIncreasingSubsequnce();
 		System.out.println(" ");
 		compressedString();
+		System.out.println();
+		findMissingNumbers();
 		System.out.println();
 	}
 
@@ -203,6 +208,15 @@ public class CodingSkillz {
 		printResult(result_1);
 		String result_2 = compressedString.result(CompressedStringTestData.createTestData_2());
 		printResult(result_2);
+	}
+
+	private static void findMissingNumbers() {
+		System.out.println("- Array: findMissingNumbers");
+		FindMissingNumbers findMissingNumbers = new FindMissingNumbers();
+		Integer[] result_1 = findMissingNumbers.result(FindMissingNumbersTestData.creteTestData_1());
+		printResult(Arrays.toString(result_1));
+		Integer[] result_2 = findMissingNumbers.result(FindMissingNumbersTestData.creteTestData_2());
+		printResult(Arrays.toString(result_2));
 	}
 
 
