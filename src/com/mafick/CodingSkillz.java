@@ -24,6 +24,8 @@ import com.mafick.list.ConsecutiveNumberString;
 import com.mafick.list.ConsecutiveNumberStringTestData;
 import com.mafick.list.ReverseList;
 import com.mafick.list.ReverseListTestData;
+import com.mafick.nodes.ReverseDirectGraph;
+import com.mafick.nodes.ReverseDirectGraphTestData;
 import com.mafick.routers.CriticalRouters;
 import com.mafick.routers.CriticalRoutersTestData;
 import com.mafick.string.AbsolutePath;
@@ -38,6 +40,7 @@ import com.mafick.substring.FindLongestPalindrome;
 import com.mafick.substring.FindLongestPalindromeTestData;
 import com.mafick.substring.FindLongestSubString;
 import com.mafick.substring.FindLongestSubStringTestData;
+import com.mafick.util.Node;
 
 public class CodingSkillz {
 
@@ -79,6 +82,8 @@ public class CodingSkillz {
 		findMissingNumbers();
 		System.out.println(" ");
 		absolutePath();
+		System.out.println(" ");
+		reverseDirectedGraph();
 		System.out.println(" ");
 	}
 
@@ -232,6 +237,13 @@ public class CodingSkillz {
 		printResult(result_2);
 		String result_3 = absolutePath.result(AbsolutePathTestData.creteTestData_3());
 		printResult(result_3);
+	}
+
+	private static void reverseDirectedGraph() {
+		System.out.println("- Node: reverseDirectedGraph");
+		ReverseDirectGraph reverseDirectGraph = new ReverseDirectGraph();
+		Node[] result = reverseDirectGraph.result(ReverseDirectGraphTestData.creteTestData());
+		printResult(result);
 	}
 
 
