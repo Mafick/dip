@@ -27,6 +27,7 @@ import com.mafick.list.ReverseListTestData;
 import com.mafick.nodes.ReverseDirectGraph;
 import com.mafick.nodes.ReverseDirectGraphTestData;
 import com.mafick.recursion.Recursion;
+import com.mafick.recursion.RecursionTestData;
 import com.mafick.routers.CriticalRouters;
 import com.mafick.routers.CriticalRoutersTestData;
 import com.mafick.string.AbsolutePath;
@@ -252,12 +253,10 @@ public class CodingSkillz {
 	private static void recursion() {
 		System.out.println("- Recursion: recursion");
 		Recursion recursion = new Recursion();
-		System.out.println("Input:     " + 3);
-		Integer result = recursion.result_2(3);
-		printResult(result);
-		System.out.println("Input:     " + "dog " + 5);
-		String result_3 = recursion.result_3("dog", 5, 0);
-		printResult(result_3);
+		Integer result_1 = recursion.result_2(RecursionTestData.creteTestData_1());
+		printResult(result_1);
+		String result_2 = recursion.result_3(RecursionTestData.creteTestData_2(), 5, 0);
+		printResult(result_2);
 	}
 
 
