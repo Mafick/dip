@@ -26,6 +26,8 @@ import com.mafick.list.ReverseList;
 import com.mafick.list.ReverseListTestData;
 import com.mafick.routers.CriticalRouters;
 import com.mafick.routers.CriticalRoutersTestData;
+import com.mafick.string.AbsolutePath;
+import com.mafick.string.AbsolutePathTestData;
 import com.mafick.string.BasicCalculator;
 import com.mafick.string.BasicCalculatorTestData;
 import com.mafick.string.CompressedString;
@@ -73,9 +75,11 @@ public class CodingSkillz {
 		longestIncreasingSubsequnce();
 		System.out.println(" ");
 		compressedString();
-		System.out.println();
+		System.out.println(" ");
 		findMissingNumbers();
-		System.out.println();
+		System.out.println(" ");
+		absolutePath();
+		System.out.println(" ");
 	}
 
 	//
@@ -217,6 +221,17 @@ public class CodingSkillz {
 		printResult(Arrays.toString(result_1));
 		Integer[] result_2 = findMissingNumbers.result(FindMissingNumbersTestData.creteTestData_2());
 		printResult(Arrays.toString(result_2));
+	}
+
+	private static void absolutePath() {
+		System.out.println("- String: absolutePath");
+		AbsolutePath absolutePath = new AbsolutePath();
+		String result_1 = absolutePath.result(AbsolutePathTestData.creteTestData_1());
+		printResult(result_1);
+		String result_2 = absolutePath.result(AbsolutePathTestData.creteTestData_2());
+		printResult(result_2);
+		String result_3 = absolutePath.result(AbsolutePathTestData.creteTestData_3());
+		printResult(result_3);
 	}
 
 
