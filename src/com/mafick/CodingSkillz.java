@@ -243,7 +243,7 @@ public class CodingSkillz {
 		System.out.println("- Node: reverseDirectedGraph");
 		ReverseDirectGraph reverseDirectGraph = new ReverseDirectGraph();
 		Node[] result = reverseDirectGraph.result(ReverseDirectGraphTestData.creteTestData());
-		printResult(result);
+		printResult(Arrays.toString(result));
 	}
 
 

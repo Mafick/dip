@@ -1,5 +1,6 @@
 package com.mafick.util;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Node {
@@ -16,21 +17,16 @@ public class Node {
 		this.value = value;
 	}
 
-	public String getValue() {
-		return value;
+	//
+
+	public void addAdjacentNode(Node node) {
+		if (this.adjacent == null) {
+			this.adjacent = new ArrayList<>();
+		}
+		this.adjacent.add(node);
 	}
 
-	public void setValue(String value) {
-		this.value = value;
-	}
-
-	public List<Node> getAdjacent() {
-		return adjacent;
-	}
-
-	public void setAdjacent(List<Node> adjacent) {
-		this.adjacent = adjacent;
-	}
+	//
 
 	@Override
 	public String toString() {
@@ -49,5 +45,24 @@ public class Node {
 		}
 
 		return builder.toString();
+	}
+
+
+	//
+
+	public String getValue() {
+		return value;
+	}
+
+	public void setValue(String value) {
+		this.value = value;
+	}
+
+	public List<Node> getAdjacent() {
+		return adjacent;
+	}
+
+	public void setAdjacent(List<Node> adjacent) {
+		this.adjacent = adjacent;
 	}
 }
