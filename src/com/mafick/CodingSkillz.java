@@ -34,6 +34,8 @@ import com.mafick.string.AbsolutePath;
 import com.mafick.string.AbsolutePathTestData;
 import com.mafick.string.BasicCalculator;
 import com.mafick.string.BasicCalculatorTestData;
+import com.mafick.string.CompareVersionNumber;
+import com.mafick.string.CompareVersionNumberTestData;
 import com.mafick.string.CompressedString;
 import com.mafick.string.CompressedStringTestData;
 import com.mafick.string.ValidateBalancedBrackets;
@@ -88,6 +90,8 @@ public class CodingSkillz {
 		reverseDirectedGraph();
 		System.out.println(" ");
 		recursion();
+		System.out.println(" ");
+		compareVersionNumber();
 		System.out.println(" ");
 	}
 
@@ -257,6 +261,29 @@ public class CodingSkillz {
 		printResult(result_1);
 		String result_2 = recursion.result_3(RecursionTestData.creteTestData_2(), 5, 0);
 		printResult(result_2);
+	}
+
+	private static void compareVersionNumber() {
+		System.out.println("- String: compareVersionNumber");
+		CompareVersionNumber compareVersionNumber = new CompareVersionNumber();
+
+		System.out.println("Input:     " + CompareVersionNumberTestData.VERSION_1_0_33 + " vs " + CompareVersionNumberTestData.VERSION_1_0_27);
+		int result_1 = compareVersionNumber.result(CompareVersionNumberTestData.VERSION_1_0_33, CompareVersionNumberTestData.VERSION_1_0_27);
+		printResult(result_1);
+		System.out.println("Input:     " + CompareVersionNumberTestData.VERSION_1_0_27 + " vs " + CompareVersionNumberTestData.VERSION_1_0_33);
+		int result_2 = compareVersionNumber.result(CompareVersionNumberTestData.VERSION_1_0_27, CompareVersionNumberTestData.VERSION_1_0_33);
+		printResult(result_2);
+
+		System.out.println("Input:     " + CompareVersionNumberTestData.VERSION_1_0 + " vs " + CompareVersionNumberTestData.VERSION_1_0_0);
+		int result_3 = compareVersionNumber.result(CompareVersionNumberTestData.VERSION_1_0, CompareVersionNumberTestData.VERSION_1_0_0);
+		printResult(result_3);
+		System.out.println("Input:     " + CompareVersionNumberTestData.VERSION_1_0_0 + " vs " + CompareVersionNumberTestData.VERSION_1_0);
+		int result_4 = compareVersionNumber.result(CompareVersionNumberTestData.VERSION_1_0_0, CompareVersionNumberTestData.VERSION_1_0);
+		printResult(result_4);
+
+		System.out.println("Input:     " + CompareVersionNumberTestData.VERSION_1_001 + " vs " + CompareVersionNumberTestData.VERSION_1_0001);
+		int result_5 = compareVersionNumber.result(CompareVersionNumberTestData.VERSION_1_001, CompareVersionNumberTestData.VERSION_1_0001);
+		printResult(result_5);
 	}
 
 
