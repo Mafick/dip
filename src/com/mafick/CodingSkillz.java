@@ -20,6 +20,8 @@ import com.mafick.array.FirstAndLastIndicies;
 import com.mafick.array.FirstAndLastIndiciesTestData;
 import com.mafick.array.LongestIncreasingSubsequnce;
 import com.mafick.array.LongestIncreasingSubsequnceTestData;
+import com.mafick.integer.PalindromeIntegers;
+import com.mafick.integer.PalindromeIntegersTestData;
 import com.mafick.list.ConsecutiveNumberString;
 import com.mafick.list.ConsecutiveNumberStringTestData;
 import com.mafick.list.ReverseList;
@@ -92,6 +94,8 @@ public class CodingSkillz {
 		recursion();
 		System.out.println(" ");
 		compareVersionNumber();
+		System.out.println(" ");
+		palindromeIntegers();
 		System.out.println(" ");
 	}
 
@@ -284,6 +288,19 @@ public class CodingSkillz {
 		System.out.println("Input:     " + CompareVersionNumberTestData.VERSION_1_001 + " vs " + CompareVersionNumberTestData.VERSION_1_0001);
 		int result_5 = compareVersionNumber.result(CompareVersionNumberTestData.VERSION_1_001, CompareVersionNumberTestData.VERSION_1_0001);
 		printResult(result_5);
+	}
+
+	private static void palindromeIntegers() {
+		System.out.println("- Integer: palindromInegers");
+		PalindromeIntegers palindromeIntegers = new PalindromeIntegers();
+		boolean result_1 = palindromeIntegers.result(PalindromeIntegersTestData.creteTestData_1());
+		printResult(result_1);
+		boolean result_2 = palindromeIntegers.result(PalindromeIntegersTestData.creteTestData_2());
+		printResult(result_2);
+		boolean result_3 = palindromeIntegers.result(PalindromeIntegersTestData.creteTestData_3());
+		printResult(result_3);
+		boolean result_4 = palindromeIntegers.result(PalindromeIntegersTestData.creteTestData_4());
+		printResult(result_4);
 	}
 
 
