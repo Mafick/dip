@@ -20,6 +20,8 @@ import com.mafick.array.FirstAndLastIndicies;
 import com.mafick.array.FirstAndLastIndiciesTestData;
 import com.mafick.array.LongestIncreasingSubsequnce;
 import com.mafick.array.LongestIncreasingSubsequnceTestData;
+import com.mafick.integer.Kapreka;
+import com.mafick.integer.KaprekaTestData;
 import com.mafick.integer.PalindromeIntegers;
 import com.mafick.integer.PalindromeIntegersTestData;
 import com.mafick.list.ConsecutiveNumberString;
@@ -96,6 +98,8 @@ public class CodingSkillz {
 		compareVersionNumber();
 		System.out.println(" ");
 		palindromeIntegers();
+		System.out.println(" ");
+		kapreka();
 		System.out.println(" ");
 	}
 
@@ -301,6 +305,13 @@ public class CodingSkillz {
 		printResult(result_3);
 		boolean result_4 = palindromeIntegers.result(PalindromeIntegersTestData.creteTestData_4());
 		printResult(result_4);
+	}
+
+	private static void kapreka() {
+		System.out.println("- Integer: kapreka");
+		Kapreka kapreka = new Kapreka();
+		int result_1 = kapreka.result(KaprekaTestData.creteTestData_1());
+		printResult(result_1);
 	}
 
 
