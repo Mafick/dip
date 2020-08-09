@@ -20,6 +20,8 @@ import com.mafick.array.FirstAndLastIndicies;
 import com.mafick.array.FirstAndLastIndiciesTestData;
 import com.mafick.array.LongestIncreasingSubsequnce;
 import com.mafick.array.LongestIncreasingSubsequnceTestData;
+import com.mafick.array.MiddleOfGrid;
+import com.mafick.array.MiddleOfGridTestData;
 import com.mafick.integer.Kapreka;
 import com.mafick.integer.KaprekaTestData;
 import com.mafick.integer.PalindromeIntegers;
@@ -100,6 +102,8 @@ public class CodingSkillz {
 		palindromeIntegers();
 		System.out.println(" ");
 		kapreka();
+		System.out.println(" ");
+		middleOfGrid();
 		System.out.println(" ");
 	}
 
@@ -312,6 +316,15 @@ public class CodingSkillz {
 		Kapreka kapreka = new Kapreka();
 		int result_1 = kapreka.result(KaprekaTestData.creteTestData_1());
 		printResult(result_1);
+	}
+
+	private static void middleOfGrid() {
+		System.out.println("- Array: middleOfGrid");
+		MiddleOfGrid middleOfGrid = new MiddleOfGrid();
+		boolean result_1 = middleOfGrid.result(MiddleOfGridTestData.creteTestData_1());
+		printResult(result_1);
+		boolean result_2 = middleOfGrid.result(MiddleOfGridTestData.creteTestData_2());
+		printResult(result_2);
 	}
 
 
