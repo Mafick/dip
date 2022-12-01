@@ -22,6 +22,7 @@ import com.mafick.array.LongestIncreasingSubsequnce;
 import com.mafick.array.LongestIncreasingSubsequnceTestData;
 import com.mafick.array.MiddleOfGrid;
 import com.mafick.array.MiddleOfGridTestData;
+import com.mafick.exception.LoopBreaking;
 import com.mafick.integer.Kapreka;
 import com.mafick.integer.KaprekaTestData;
 import com.mafick.integer.PalindromeIntegers;
@@ -104,6 +105,8 @@ public class CodingSkillz {
 		kapreka();
 		System.out.println(" ");
 		middleOfGrid();
+		System.out.println(" ");
+		loopBreaking();
 		System.out.println(" ");
 	}
 
@@ -325,6 +328,12 @@ public class CodingSkillz {
 		printResult(result_1);
 		boolean result_2 = middleOfGrid.result(MiddleOfGridTestData.creteTestData_2());
 		printResult(result_2);
+	}
+
+	private static void loopBreaking() {
+		List<Integer> arrayIntegers = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5, 6, 5, 4, 3, 2, 1));
+		LoopBreaking loopBreaking = new LoopBreaking();
+		loopBreaking.result(arrayIntegers);
 	}
 
 
